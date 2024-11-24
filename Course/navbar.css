@@ -1,0 +1,138 @@
+/*Selalu pakai ini untuk mereset spasi dll*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Style dasar*/
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 5000px;
+    max-width: 100%;
+    padding-top: 80px; /*supaya konten tidak tertutup dibawah navbar*/
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/*style classes*/
+
+.header {
+    background-color: #1751A5;
+    position: fixed; /*supaya tetap diatas*/
+    width: 100%; /*setelah diberi fixed supaya tidak rusak*/
+    top: 0; /*supaya navbar kembali keatas setelah diberi padding-top*/
+}
+
+.header__content {
+    display: flex; /*flex supaya logo dan teks nav jejer kekanan*/
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px; /*min supaya responsif*/
+    max-width: 1500px; /*supaya tidak memojok ke pinggir*/
+    padding: 0 30px; /*supaya saat viewport mengecil tidak memojok ke pinggir*/
+    margin: 0 auto; /*satu paket dengan max-width supaya responsif*/
+}
+
+img {
+    height: 50px;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav__list {
+    display: flex; /*flex supaya antar list jejer kekanan*/
+    column-gap: 20px; /*memberi jarak antar list*/
+}
+
+.nav__link {
+    color: rgba(255,255,255,0.75);
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: all 0.4s; /*supaya lebih smooth saat ganti warna*/
+    }
+
+.nav__link:hover { /*supaya jika dihover berubah warna*/
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    padding: 30px 30px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.box__item > img {
+    height: 50px;
+}
+
+.box__item > span {
+    font-size: larger;
+    text-align: center;
+    font-weight: bolder;
+    color: #2EA3F2;
+    max-width: 80%;
+}
+
+.banner {
+    object-fit: cover;
+    height: 100% !important;
+    padding: 0 30px;
+}
+
+/*untuk responsivitas bermacam layar*/
+@media (max-width: 840px) {
+    body {
+        padding-top: 140px;
+    }
+
+    .header__content {
+        flex-direction: column;
+        padding: 25px 0;
+        row-gap: 18px;
+    }
+
+    .nav__list {
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 670px) {
+    body {
+        padding-top: 450px;
+    }
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 18px;
+    }
+}

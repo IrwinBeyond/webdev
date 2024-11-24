@@ -1,0 +1,70 @@
+p {
+    margin: 0% !important;
+    text-align: justify;
+}
+    
+
+.container {
+    display: flex;
+    width: 800px;
+    overflow: hidden;
+}
+
+.Pict {
+    display: flex;
+    padding-right: 50px;
+}
+
+.Pict img {
+    width:300px;
+}
+
+.Title {
+    font-size: 2.5em;
+    padding-bottom: 15px;
+}
+
+.Subtitle {
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.Body {
+    color: gray;
+    padding-bottom: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    grid-gap: 3px;
+    border: 3px solid;
+    background-color: black;
+}
+
+.grid > div{
+    padding: 15px;
+    background-color: white;
+    font-weight: bold;
+}
+
+.space {
+    padding-bottom: 30px;
+}
+
+.button {
+    display : flex;
+    gap: 50px;
+}
+
+.buy {
+    background-color: black;
+    color: white;
+    font-weight: normal;
+    padding: 20px 50px;
+}
+
+.button > button {
+    border-radius: 0px;
+}

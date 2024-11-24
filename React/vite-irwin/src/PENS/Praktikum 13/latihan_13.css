@@ -1,0 +1,38 @@
+.bg-teal {
+    background-color: #5EEAD4 !important;
+}
+
+.btn-teal {
+    background-color: #5EEAD4 !important;
+    border-color: #5EEAD4 !important;
+    border-radius: 50px !important;
+}
+
+.btn-teal:hover {
+    background-color: #1aa38b !important;
+    border-color: #1aa38b !important;
+    transition: background-color 0.5s ease;
+}
+
+.img-hover-animate {
+    transition: transform 0.7s ease;
+}
+
+.img-hover-animate:hover {
+    transform: scale(1.2);
+}
+
+.input-hover-animate {
+    transition: all 0.7s ease-in-out;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.input-hover-animate:hover {
+    width: 80% !important;
+    margin-left: 10% !important;
+}
+
+.input-focus-shadow:focus {
+    box-shadow: 0 0 0 0.2rem rgba(32, 201, 151, 0.25);
+}

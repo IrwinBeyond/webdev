@@ -1,0 +1,120 @@
+p {
+    margin: 0% !important;
+    text-align: justify;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    overflow: hidden;
+}
+
+.pict {
+    display: flex;
+    padding-right: 50px;
+}
+
+.pict img {
+    width:400px;
+}
+
+.title {
+    font-size: 2.5em;
+    padding-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 0.75em;
+    color: dodgerblue;
+    padding-bottom: 15px;
+    font-weight: normal;
+}
+
+.body {
+    font-size: 0.75em;
+    color: gray;
+    padding-bottom: 30px;
+}
+
+.choice {
+    font-size: 0.75em;
+    color: gray;
+    padding-bottom: 10px;
+}
+
+.color {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.color > button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.red {
+    background-color: #9F1E51;
+    color: #9F1E51;
+}
+
+.black {
+    background-color: #1F2125;
+    color: #1F2125;
+}
+
+.blue {
+    background-color: #53BCF6;
+    color: #53BCF6;
+}
+
+.red:focus,
+.black:focus,
+.blue:focus {
+    color: white;
+}
+
+.variant{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.variant > button {
+    border: 1px solid grey;
+    border-radius: 3px;
+    width: auto;
+    height: auto;
+    color: gray;
+}
+
+.variant > button:focus {
+    color: black;
+}
+
+.price {
+    display: flex;
+    gap: 20px;
+}
+
+.pricetag {
+    font-size: 2em;
+}
+
+.cart {
+    width: auto;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+}
+
+.cart:focus {
+    color: black;
+    background-color: white;
+}
+
+
+
+
+
