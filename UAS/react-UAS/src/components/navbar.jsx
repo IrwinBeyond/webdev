@@ -19,7 +19,7 @@ function Navbar({ username, onLogout }) {
     };
 
     const handleCartClick = () => {
-        navigate('/cart'); // Navigate to the Cart page
+        navigate('/cart');
     };
 
     return (
@@ -45,7 +45,7 @@ function Navbar({ username, onLogout }) {
             <div className="gap-4 pe-4 d-flex col-4 justify-content-end">
                 <button 
                     className="bg-white rounded-5 d-flex btn align-self-center" 
-                    onClick={handleCartClick} // Add onClick handler here
+                    onClick={handleCartClick}
                 >
                     <span className="material-icons">shopping_cart</span>
                 </button>

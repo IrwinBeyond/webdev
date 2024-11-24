@@ -21,6 +21,11 @@ function Home({ username }) {
                         })
                     }
                     </div>
+                    <div className="text-center">
+                        <Link to="/product" className="btn btn-primary">
+                            View All Products
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

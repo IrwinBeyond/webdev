@@ -7,15 +7,15 @@ const Cart = () => {
     const navigate = useNavigate();
 
     const handleCheckout = () => {
-        alert('Proceeding to checkout!');
-        clearCart(); // Clear the cart after checkout
+        alert('Proceeding to checkout! Thank your for your hospitality');
+        clearCart(); 
     };
 
     return (
         <div className="container mt-4">
             <h1 className='mb-5'>Your Shopping Cart</h1>
             {cart.length === 0 ? (
-                <p>Your cart is empty.</p>
+                <p>Your cart is empty</p>
             ) : (
                 <div>
                     <ul className="list-group">

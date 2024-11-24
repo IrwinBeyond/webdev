@@ -15,14 +15,11 @@ const ProductDetail = () => {
     }
 
     const handleAddToCart = () => {
-        // Check if the product already exists in the cart
         const existingProduct = cart.find(item => item.objectID === product.objectID);
         
         if (existingProduct) {
-            // If it exists, increase the quantity
             existingProduct.quantity += quantity;
         } else {
-            // If it doesn't exist, add it to the cart with the specified quantity
             const productWithQuantity = { ...product, quantity };
             addToCart(productWithQuantity);
         }
@@ -43,14 +40,14 @@ const ProductDetail = () => {
                     <div className="d-flex align-items-center">
                         <button 
                             className="text-white bg-secondary btn rounded-start rounded-0" 
-                            onClick={() => setQuantity(prev => Math.max(prev - 1, 1))} // Decrease quantity
+                            onClick={() => setQuantity(prev => Math.max(prev - 1, 1))}
                         >
                             -
                         </button>
                         <button className='border btn rounded-0'>{quantity}</button>
                         <button 
                             className="text-white bg-secondary btn rounded-end rounded-0" 
-                            onClick={() => setQuantity(prev => prev + 1)} // Increase quantity
+                            onClick={() => setQuantity(prev => prev + 1)}
                         >
                             +
                         </button>

@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import dataset from '../data/dataset.json'; 
-import { useCart } from './cartcontext.jsx'; 
 
 const Product = () => {
     const [products, setProducts] = useState([]);
@@ -9,7 +8,6 @@ const Product = () => {
     const [displayCount, setDisplayCount] = useState(10); 
 
     const location = useLocation();
-    const { addToCart } = useCart();
 
     useEffect(() => {
         setProducts(dataset);
@@ -43,7 +41,7 @@ const Product = () => {
     return (
         <div className="container px-5 py-3 mt-4 bg-white fyp rounded-2">
             <h1 className="pb-5 text-center">
-                {`Results for: ${searchQuery}`}
+                {searchQuery ? `Results for: ${searchQuery}` : 'All Products'}
             </h1>
             <div className="gap-5 text-center row justify-content-center align-items-center">
                 {displayedProducts.map((product) => (
@@ -67,7 +65,7 @@ const Product = () => {
                 {filteredProducts.length > 0 ? (
                     <p>Showing {displayedProducts.length} of {filteredProducts.length} products</p>
                 ) : (
-                    <p>No products found for your search.</p>
+                    <p>No products found</p>
                 )}
             </div>
         </div>
