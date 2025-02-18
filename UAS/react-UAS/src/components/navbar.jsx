@@ -26,7 +26,7 @@ function Navbar({ username, onLogout }) {
         <nav className="p-4 bg-white navbar navbar-expand-lg row sticky-top">
             <div className="col-4 navbar-brand">
                 <Link to='/'>
-                    <img className="black" src="assets/logo.png" width={100} alt="Logo" />
+                    <img className="black" src="/logo.png" width={100} alt="Logo" />
                 </Link>
             </div>
             <div className="d-flex col-4 search rounded-5">
