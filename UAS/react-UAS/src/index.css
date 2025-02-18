@@ -55,7 +55,7 @@ footer a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("assets/login.jpg");
+    background-image: url("/login.jpg");
     background-size: cover;
     background-position: center;
     z-index: 0;
@@ -94,7 +94,7 @@ footer a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("assets/home.jpg");
+    background-image: url("/home.jpg");
     background-size: cover;
     background-position: center;
     z-index: 0;
